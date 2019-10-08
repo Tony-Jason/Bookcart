@@ -1,0 +1,15 @@
+<h1 style="text-align: center;color:blue">Book Details</h1>
+<div class="container">
+    <div><img class="menuimage" [src]="booktable.image"></div>
+    <div>{{booktable.name}}</div>
+    <div>Author: {{booktable.author}}</div>
+    <div>Price: {{booktable.price}} Rs /- only</div>
+    <div>
+        <p>{{booktable.desc}}</p>
+    </div>
+    <div style="margin-bottom: 20px"><button type="button" routerLink='/cards' class="btn-primary">Go to List</button><span
+            style="margin-left: 20px"><button type="button" (click)="this.svc.addbook(booktable)" routerLink='/cart' class="btn-primary">Add to
+                cart</button></span>
+    </div>
+
+</div>

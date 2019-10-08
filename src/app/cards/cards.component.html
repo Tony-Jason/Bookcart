@@ -1,0 +1,16 @@
+<div class = "container">
+<div class = "row">
+<div class = "col-md-3" *ngFor = "let iter of books">
+  <div class="card" style="width: 12rem;">
+    <img class="card-img-top" [src] = iter.image alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{iter.name}}</h5>
+      <h5 class="card-title">{{iter.author}}</h5>
+      <h5 class="card-title">{{iter.price}}</h5>
+      <button type="button" routerLink="/details" class="btn-primary" (click)="onClick(iter)">View Details</button>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
